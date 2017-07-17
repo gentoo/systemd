@@ -821,6 +821,8 @@ char **generator_binary_paths(UnitFileScope scope) {
                 return strv_new("/run/systemd/system-generators",
                                 "/etc/systemd/system-generators",
                                 "/usr/local/lib/systemd/system-generators",
+                                "/usr/lib/systemd/system-generators",
+                                "/lib/systemd/system-generators",
                                 SYSTEM_GENERATOR_PATH,
                                 NULL);
 
