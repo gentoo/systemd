@@ -298,7 +298,6 @@ int main(int argc, char *argv[]) {
         test_compress_stream(OBJECT_COMPRESSED_LZ4, "lz4cat",
                              compress_stream_lz4, decompress_stream_lz4, srcfile);
 
-        test_lz4_decompress_partial();
 #else
         log_info("/* LZ4 test skipped */");
 #endif
